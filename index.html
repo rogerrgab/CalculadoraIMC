@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+
+    <section class="section">
+        <div class="container">
+
+            <article class="panel is-primary">
+                <p class="panel-heading">
+                  Tabela IMC
+                </p>
+
+                <div class="message-body">
+                    O Índice de Massa Corporal (IMC) é um cálculo simples que relaciona peso e altura. Ele é obtido dividindo o peso (em quilogramas) pela altura ao quadrado (em metros). Essa fórmula padronizada é utilizada para avaliar a quantidade de gordura corporal de uma pessoa.
+                    O IMC desempenha um papel crucial na avaliação de riscos de obesidade e outros problemas relacionados ao peso. Apesar de sua praticidade, alguns especialistas recomendam cautela na interpretação, enfatizando a necessidade de considerar outros fatores, como composição corporal.
+                </div>
+            </article>
+
+            <div class="columns">
+                <div class="column is-6">
+                    <article class="message is-primary">
+                        <div class="message-header">
+                          <p>IMC</p>
+                          <button class="delete" aria-label="delete"></button>
+                        </div>
+                        <div class="message-body">
+                            <p class="has-text-centered">
+                                -- Menos do que 18,5 -- <br>
+                                -- Entre 18,5 e 24,9 --<br>
+                                -- Entre 25 e 29,9 --  <br>
+                                -- Entre 30 e 34,9 --  <br>
+                                -- Entre 35 e 39,9 --  <br>
+                                -- Mais do que 40  --
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="column is-6">  
+                    <article class="message is-primary">
+                        <div class="message-header">
+                          <p>Resultado</p>
+                          <button class="delete" aria-label="delete"></button>
+                        </div>
+                        <div class="message-body">
+                          <p class="has-text-centered">
+                            (Abaixo do peso)  <br>
+                            (Peso normal)    <br>
+                            (Sobrepeso)       <br>
+                            (Obesidade grau 1) <br>
+                            (Obesidade grau 2) <br>
+                            (Obesidade grau 3) <br>
+                          </p>
+                        </div>
+                      </article>
+                </div>
+
+            </div>
+
+            <article class="panel is-primary">
+                <p class="panel-heading has-text-centered">
+                  Calcule seu IMC
+                </p>
+            </article>
+
+            <div class="columns">
+                <div class="column is-9">
+                    
+                    <form class="box" id="formulario"> <!--1°Elemento a selecionar-->
+                        <div class="field">
+                          <label class="label">Nome e Sobrenome:</label>
+                          <div class="control">
+                            <input class="input" id="nome" type="text" placeholder="ex: Marcos Andrade..."><!--2°Elemento a selecionar-->
+                          </div>
+                        </div>
+                      
+                        <div class="field">
+                          <label class="label">Peso:</label>
+                          <div class="control">
+                            <input class="input" id="peso" type="text" placeholder="85 kg"> <!--3°Elemento a selecionar-->
+                          </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Altura:</label>
+                            <div class="control">
+                              <input class="input" id="altura" type="text" placeholder="1.83"> <!--4°Elemento a selecionar-->
+                            </div>
+                        </div>
+
+                      <!--<input class="button is-success is-medium" value="Calcular">-->
+                        <button class="button is-success is-medium"> Calcular </button>
+
+                        <div id="resultado"> <!--5°Elemento a selecionar-->
+                            <p><br></p>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<script src="./Js/main.js"></script>
+</body>
+</html>
