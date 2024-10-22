@@ -1,2 +1,2 @@
 # CalculadoraIMC
-Simples projeto que feito em HTML, CSS e Javascript que calcula o índice de massa corporal(IMC) com base no peso e altura do usuário
+Simple project made in HTML, CSS and Javascript that calculates the body mass index (BMI) based on the user's weight and height
